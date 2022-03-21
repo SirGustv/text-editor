@@ -25,7 +25,23 @@ namespace TextEditor
             }
 
         }
+
         static void OpenFile() { }
-        static void CreateFile() { }
+
+        static void CreateFile()
+        {
+            Console.Clear();
+            Console.WriteLine("Escreva seu texto abaixo (ESC para Sair)");
+            Console.WriteLine("--------------------------");
+            string text = "";
+
+            do
+            {
+                text += Console.ReadLine();
+                text += Environment.NewLine;
+            }
+            while (Console.ReadKey().Key != ConsoleKey.Escape);
+
+        }
     }
 }
