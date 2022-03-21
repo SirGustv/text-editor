@@ -27,7 +27,21 @@ namespace TextEditor
 
         }
 
-        static void OpenFile() { }
+        static void OpenFile()
+        {
+            Console.Clear();
+            Console.WriteLine("Qual o caminho do arquivo desejado?");
+            string path = Console.ReadLine();
+
+            using (var file = new StreamReader(path))
+            {
+                string text = file.ReadToEnd();
+                Console.WriteLine(text);
+            }
+            Console.WriteLine("Pressione ENTER para voltar ao menu.");
+            Console.ReadLine();
+            Menu();
+        }
 
         static void CreateFile()
         {
@@ -55,7 +69,7 @@ namespace TextEditor
             {
                 file.Write(text);
             }
-            Console.Write($"Arquivo salvo em {path} com sucesso!\nPrencione ENTER para voltar ao menu.");
+            Console.Write($"Arquivo salvo em '{path}' com sucesso!\n\nPrencione ENTER para voltar ao menu.");
             Console.ReadLine();
             Menu();
         }
