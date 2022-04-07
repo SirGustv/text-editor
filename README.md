@@ -1,5 +1,4 @@
 ## EDITOR DE TEXTO
-
 ### RESUMO
 
 Projeto com o intuito te fixar aprendizado obtido, colocando em prática o que foi estudado a fim de entender e fixar novas funções em C#.
@@ -25,3 +24,5 @@ Com ```git clone```
 > -- Clone o repositório utilizando o comando ```git clone "link do repositório(sem aspas)"``` em seu terminal Git;
 >
 > -- Ao certificar-se que está tudo em ordem com a SDK do .NET e com os arquivos baixados do repositório, abra um terminal de sua referência e navegue até a pasta que contenha os arquivos do repositório e certifique que tenha o arquivo ```Program.cs``` e execute o seguinte comando no terminal ```dotnet build``` para o .NET criar os arquivos necessários para executar a aplicação e em seguida execute ```dotnet run``` para a aplicação ser iniciada em sua máquina.
+
+Projeto para fins educacionais, para aprender um pouco mais sobre Threds em C#.
